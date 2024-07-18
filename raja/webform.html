@@ -1,0 +1,300 @@
+<html>
+<head>
+<script src='//cdn.freshmarketer.eu/1289/719.js'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea, [type="email"], [type="number"] , [type="checkbox"]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<script type="text/javascript">
+
+  
+function myFunction() {
+
+  
+  var emp_id = document.getElementById("emp_id").value;
+  var fname = document.getElementById("fname").value;
+  var mname = document.getElementById("mname").value;
+  var lname = document.getElementById("lname").value; 
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var mobile = document.getElementById("mobile").value;
+  var fb = document.getElementById("fb").value;
+  var ln = document.getElementById("ln").value;
+  var tw = document.getElementById("tw").value;
+  var company = document.getElementById("company").value;
+  var address = document.getElementById("address").value;
+  var city = document.getElementById("city").value;
+  var state = document.getElementById("state").value;
+  var country = document.getElementById("country").value;
+  var terms = document.getElementById("terms");
+  terms = terms ? true : false;
+
+        var userValues = {
+"firstname":fname,
+"email":email,
+"lastname":lname};
+window.FMApi = window.FMApi || []; window.FMApi.push("fm_form_tracking", "9CC65AC154C7CA6170ED0FF54BA6928266D4B9C9C577AA90EB3CDA2A94DC297FCAC35384A78A85EA85EA56AE3DB14BD33F24CF09D05170D440CFAB5464B48CF1", userValues);
+
+return false;
+  
+}
+
+</script>
+</head>
+<body>
+
+<h3>Form fields mapped to custom fields</h3>
+
+<div class="container">
+  <form onsubmit="return myFunction()">
+
+
+    <label for="emp_id">Employee_id</label>
+    <input type="text" id="emp_id" name="emp_id" placeholder="Your emp_id..">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="mname">Middle Name</label>
+    <input type="text" id="mname" name="middlename" placeholder="Your middle name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your email id..">
+
+    <label for="Phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+    <label for="mobile">Mobile</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+
+    <label for="facebook">Facebook</label>
+    <input type="text" id="fb" name="facebook" placeholder="facebook id..">
+
+    <label for="linkedin">Linkedin</label>
+    <input type="text" id="ln" name="linkedin" placeholder="linkedin id..">
+
+    <label for="twitter">Twitter</label>
+    <input type="text" id="tw" name="twitter" placeholder="twitter id..">
+
+    <label for="company">Twitter</label>
+    <input type="text" id="company" name="company" placeholder="company name..">
+
+
+    <label for="address">Address</label>
+    <textarea id="address" name="Address" placeholder="Address" style="height:200px"></textarea>
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="Your city name..">
+
+    <label for="State">State</label>
+    <input type="text" id="state" name="state" placeholder="Your state name..">
+
+
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+<label for="emp_id1">Employee_id1</label>
+    <input type="text" id="emp_id1" name="emp_id1" placeholder="Your emp_id..">
+
+    <label for="fname1">First Name1</label>
+    <input type="text" id="fname1" name="firstname1" placeholder="Your name..">
+
+    <label for="mname1">Middle Name1</label>
+    <input type="text" id="mname1" name="middlename1" placeholder="Your middle name..">
+
+    <label for="lname1">Last Name1</label>
+    <input type="text" id="lname1" name="lastname1" placeholder="Your last name..">
+
+    <label for="email1">Email Address1</label>
+    <input type="email" id="email1" name="email1" placeholder="Your email id..">
+
+    <label for="Phone1">Phone1</label>
+    <input type="text" id="phone1" name="phone1" placeholder="Your phone number..">
+
+    <label for="mobile1">Mobile1</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+
+    <label for="facebook1">Facebook1</label>
+    <input type="text" id="fb1" name="facebook1" placeholder="facebook id..">
+
+    <label for="linkedin1">Linkedin1</label>
+    <input type="text" id="ln1" name="linkedin1" placeholder="linkedin id..">
+
+    <label for="twitter1">Twitter1</label>
+    <input type="text" id="tw1" name="twitter1" placeholder="twitter id..">
+
+    <label for="company1">Twitter1</label>
+    <input type="text" id="company1" name="company1" placeholder="company name..">
+
+
+    <label for="address1">Address1</label>
+    <textarea id="address1" name="Address1" placeholder="Address" style="height:200px"></textarea>
+
+    <label for="city1">City1</label>
+    <input type="text" id="city1" name="city1" placeholder="Your city name..">
+
+    <label for="State">State1</label>
+    <input type="text" id="state1" name="state1" placeholder="Your state name..">
+
+
+
+    <label for="country1">Country1</label>
+    <select id="country1" name="country1">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="emp_id2">Employee_id2</label>
+    <input type="text" id="emp_id2" name="emp_id2" placeholder="Your emp_id..">
+
+    <label for="fname2">First Name2</label>
+    <input type="text" id="fname2" name="firstname2" placeholder="Your name..">
+
+    <label for="mname2">Middle Name2</label>
+    <input type="text" id="mname2" name="middlename2" placeholder="Your middle name..">
+
+    <label for="lname2">Last Name2</label>
+    <input type="text" id="lname2" name="lastname2" placeholder="Your last name..">
+
+    <label for="email2">Email Address2</label>
+    <input type="email" id="email2" name="email2" placeholder="Your email id..">
+
+    <label for="Phone2">Phone2</label>
+    <input type="text" id="phone2" name="phone2" placeholder="Your phone number..">
+
+    <label for="mobile2">Mobile2</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Your mobile number..">
+
+    <label for="facebook2">Facebook2</label>
+    <input type="text" id="fb2" name="facebook2" placeholder="facebook id..">
+
+    <label for="linkedin2">Linkedin2</label>
+    <input type="text" id="ln2" name="linkedin2" placeholder="linkedin id..">
+
+    <label for="twitter2">Twitter2</label>
+    <input type="text" id="tw2" name="twitter2" placeholder="twitter id..">
+
+    <label for="company2">Twitter2</label>
+    <input type="text" id="company2" name="company2" placeholder="company name..">
+
+
+    <label for="address2">Address2</label>
+    <textarea id="address2" name="Address2" placeholder="Address" style="height:200px"></textarea>
+
+    <label for="city2">City2</label>
+    <input type="text" id="city2" name="city2" placeholder="Your city name..">
+
+    <label for="State2">State2</label>
+    <input type="text" id="state2" name="state2" placeholder="Your state name..">
+
+
+
+    <label for="country2">Country2</label>
+    <select id="country2" name="country2">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="emp_id3">Employee_id3</label>
+    <input type="text" id="emp_id3" name="emp_id3" placeholder="Your emp_id..">
+
+    <label for="fname3">First Name3</label>
+    <input type="text" id="fname3" name="firstname3" placeholder="Your name..">
+
+    <label for="mname3">Middle Name3</label>
+    <input type="text" id="mname3" name="middlename3" placeholder="Your middle name..">
+
+    <label for="lname3">Last Name3</label>
+    <input type="text" id="lname3" name="lastname3" placeholder="Your last name..">
+
+    <label for="email3">Email Address3</label>
+    <input type="email" id="email3" name="email3" placeholder="Your email id..">
+
+    <label for="Phone3">Phone3</label>
+    <input type="text" id="phone3" name="phone3" placeholder="Your phone number..">
+
+    <label for="mobile3">Mobile3</label>
+    <input type="text" id="mobile3" name="mobile3" placeholder="Your mobile number..">
+
+    <label for="facebook3">Facebook3</label>
+    <input type="text" id="fb3" name="facebook3" placeholder="facebook id..">
+
+    <label for="linkedin3">Linkedin3</label>
+    <input type="text" id="ln3" name="linkedin3" placeholder="linkedin id..">
+
+    <label for="twitter3">Twitter3</label>
+    <input type="text" id="tw3" name="twitter3" placeholder="twitter id..">
+
+    <label for="company3">Twitter3</label>
+    <input type="text" id="company3" name="company3" placeholder="company name..">
+
+
+    <label for="address3">Address3</label>
+    <textarea id="address3" name="Address3" placeholder="Address" style="height:200px"></textarea>
+
+    <label for="city3">City3</label>
+    <input type="text" id="city3" name="city3" placeholder="Your city name..">
+
+    <label for="State3">State3</label>
+    <input type="text" id="state3" name="state3" placeholder="Your state name..">
+
+
+
+    <label for="country3">Country3</label>
+    <select id="country3" name="country3">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <input type="checkbox" id="terms" name="accept">Accept terms and condition<br>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
