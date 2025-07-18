@@ -14,7 +14,17 @@
 <link href="css/jcarousel.html" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
-<script src='//fm-staging-us-app-cdnjs.s3.amazonaws.com/9830037/7771578.js'></script>
+<script>
+function initFreshdesk() {
+  window.fdWidget.init({
+    token: "01K0BH3TEFK0EP295ADR7PQ0ME",
+    host: "https://1pbhjul17.freshpo.com",
+    widgetId: "01K0EDDXRV7W95XF414CKP22PX"
+  });
+}
+
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://1pbhjul17.freshpo.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 
